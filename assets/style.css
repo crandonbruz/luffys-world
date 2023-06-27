@@ -1,6 +1,61 @@
 * {
-    margin: 0;
-    padding: 0;
+    color: rgb(40, 40, 170);
+}
 
+.vertical-line {
+    border-left: 5px solid blue;
+    height: 100px;
+    
+}
+.title {
+    float: left;
+    padding: 50px;
+}
+
+p{
+    float: right;
+}
+
+footer ul {
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px;
+}
+header {
+    background-color: gray;
+    padding: 10px;
+}
+
+header h1 {
+    font-size: 35px;
+    border-style: solid;
+    border-color: aqua;
+    display: inline;
+}
+.navbar {
+    width: 100%;
+    background-color: rgb(128, 128, 128);
+    overflow: hidden;
+    padding: 10px;
+
+}
+
+.navbar a {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    float: right;
+    justify-content: space-between;
+
+}
+
+nav ul>a:hover {
+    color: rgb(65, 177, 241);
+    text-decoration: none;
+    animation-name: text_fadein;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
 }
 
