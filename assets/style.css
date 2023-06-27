@@ -2,11 +2,11 @@
     color: rgb(40, 40, 170);
 }
 
-.vertical-line {
+/* .vertical-line {
     border-left: 5px solid blue;
     height: 100px;
     
-}
+} */
 .title {
     float: left;
     padding: 50px;
