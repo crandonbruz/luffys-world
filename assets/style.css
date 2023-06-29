@@ -148,19 +148,13 @@ div h4 {
 }
 
 @media screen and (max-width: 992px) {
-    .column {
+    main {
       width: 50%;
     }
   }
 
-@media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
-  }
-
-  @media screen and (min-width: 100px) {
-    .column {
+@media screen and (max-width: 768px) {
+    main {
       width: 100%;
     }
   }
