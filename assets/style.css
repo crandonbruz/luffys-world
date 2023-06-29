@@ -32,10 +32,17 @@ header {
     color: var(--primary);
 }
 
+.navbar {
+    display: flex;
+    width: 630px;
+    justify-content: space-between;
+}
+
 .navbar a {
     border: 1px dashed rgba(0, 0, 0, 0.5);
     color: var(--secondary);
     font-size: 25px;
+
 }
 
 .bottom-header {
@@ -81,29 +88,41 @@ section {
 
 .paragraph {
     border: 1px dashed rgba(0, 0, 0, 0.5);
-
+    width: 80%;
 }
 
 .flex-container {
     border: 1px dashed rgba(0, 0, 0, 0.5);
     display: flex;
     flex-wrap: wrap;
-    
 }
 
 .flex-item {
     border: 1px dashed rgba(0, 0, 0, 0.5);
+    flex: 1;
+}
+
+.big-picture {
+    flex: 2;  
 }
 
 .flex-item img {
     border: 1px dashed rgba(0, 0, 0, 0.5);
-    width: 300px;
+    max-width: 100%;
+    height: auto;
 }
 
 .final-content {
     border: 1px dashed rgba(0, 0, 0, 0.5);
     display: flex;
-    justify-content: space-between;
-    font-size: 50px;
+    justify-content: space-between;  
     
+}
+.final-content a {
+    border: 1px dashed rgba(0, 0, 0, 0.5);
+    color: var(--secondary);
+    font-size: 25px;
+    width: 300px;
+    text-align: center;
+    padding: 10px;
 }
