@@ -103,12 +103,16 @@ section {
     
 }
 
-div h4 {
+div a {
     position: absolute;
     background-color: var(--secondary);
     bottom: 5%;
     left: 0;
     padding: 5px 10px;
+    color: bold var(--primary);
+    font-size: 20px;
+    
+    
 
 }
 .flex-item {
@@ -132,8 +136,15 @@ div h4 {
     height: 100;
     left: 0;
     right: 0;
+    background-image: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
+.flex-item:hover{
+    border: solid 2px blue;
+    
+}
 .final-content {
     display: flex;
     justify-content: space-between;  
