@@ -37,7 +37,6 @@ header {
 .navbar a {
     color: var(--secondary);
     font-size: 25px;
-
 }
 
 #bottom-header {
@@ -87,6 +86,7 @@ section {
 
 .paragraph {
     width: 80%;
+    text-align: center;
 }
 
 #work {
@@ -111,7 +111,7 @@ div a {
     padding: 5px 10px;
     color: bold var(--primary);
     font-size: 20px;
-    
+    text-decoration: none;
     
 
 }
@@ -147,7 +147,8 @@ div a {
 }
 .final-content {
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-between; 
+    position: relative;; 
     
 }
 .final-content a {
@@ -156,6 +157,7 @@ div a {
     width: 300px;
     text-align: center;
     padding: 10px;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 992px) {
