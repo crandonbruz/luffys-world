@@ -103,7 +103,7 @@ section {
     
 }
 
-div a {
+.flex-container a {
     position: absolute;
     background-color: var(--secondary);
     bottom: 5%;
