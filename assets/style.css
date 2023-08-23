@@ -167,6 +167,7 @@ p {
   padding: 28px;
   margin: 8px;
   text-decoration: none;
+  transform: translateY(35px);
 }
 
 @media screen and (max-width: 992px) {
