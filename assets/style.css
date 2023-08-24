@@ -163,34 +163,57 @@ p {
 }
 
 @media screen and (max-width: 992px) {
-  body {
-    width: 50%;
+  main {
+    width: 70%; /* Adjust as needed */
+    margin: 0 auto; /* Center the content */
+  }
+  
+  section {
+    flex-direction: column; /* Stack sections on smaller screens */
+    padding: 30px; /* Reduce padding for better space usage */
+  }
+  .content-name{
+    border-right: none
   }
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    width: 100%;
+  main {
+    width: 90%; /* Adjust as needed */
   }
-}
+  
+  .navbar {
+    flex-direction: column; /* Stack navbar links on smaller screens */
+    align-items: center; /* Center navbar links */
+  }
 
-@media screen and (max-width: 390px) {
-  body {
-    width: 20%;
-    display: flex;
-    flex-wrap: wrap;
+  .top-header {
+    padding: 10px; /* Reduce padding for smaller screens */
   }
-  .top-header, .navbar {
-    flex-direction: column;
+
+  .website-title {
+    font-size: 20px; /* Decrease font size for smaller screens */
   }
-  .subtitle{
-    display: none;
+
+  .navbar a {
+    font-size: 18px; /* Decrease font size for smaller screens */
   }
-  .content-name{
-    font-size: 40px;
-    width: 100%;
+  
+  section {
+    padding: 20px; /* Reduce padding for smaller screens */
   }
-  .paragraph{
-    width: 100%;
+
+  .content-name, .paragraph {
+    width: 100%; /* Full width on smaller screens */
+    text-align: center; /* Center content on smaller screens */
+  }
+  
+  .flex-container {
+    justify-content: center; /* Center items on smaller screens */
+  }
+  
+  .flex-item {
+    flex: 0 0 100%; /* Full width on smaller screens */
+    max-width: 100%; /* Full width on smaller screens */
   }
 }
