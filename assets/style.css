@@ -40,7 +40,7 @@ header {
   font-size: 25px;
   text-decoration: none;
   padding: 5px;
-  transition: .5s;
+  transition: 0.5s;
 }
 .navbar a:hover {
   color: var(--light);
@@ -113,9 +113,7 @@ p {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex: 0 0 80%;
+  width: 80%;
 }
 
 .flex-container a {
@@ -132,19 +130,13 @@ p {
 
 .flex-item {
   flex: 0 0 40%;
-  min-width: 40%;
-  max-width: 40%;
-  height: auto;
   margin: 20px auto;
   position: relative;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .big-picture {
-  flex: 0 0 90%;
   min-width: 90%;
-  max-width: 90%;
-  height: auto;
 }
 
 .flex-item img {
@@ -156,9 +148,9 @@ p {
   border: solid 10px var(--secondary);
   opacity: 0.8;
 }
-/* .final-content {
-    
-} */
+.final-content {
+    width: 80%;
+}
 .final-content a {
   display: inline-table;
   color: var(--primary);
@@ -171,13 +163,34 @@ p {
 }
 
 @media screen and (max-width: 992px) {
-  main {
+  body {
     width: 50%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  main {
+  body {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  body {
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .top-header, .navbar {
+    flex-direction: column;
+  }
+  .subtitle{
+    display: none;
+  }
+  .content-name{
+    font-size: 40px;
+    width: 100%;
+  }
+  .paragraph{
     width: 100%;
   }
 }
